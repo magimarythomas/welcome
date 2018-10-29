@@ -1,0 +1,20 @@
+<img src="{{ albums.album_logo.url }}";>
+
+<h1>{{ albums.album_title }}</h1>
+<h2>{{ albums.artist }}</h2>
+<u1>
+
+<a href='{{ albums.songs_set.all }}'>playaudio</a>
+
+ {%for song in albums.songs_set.all%}
+   <a href='{{ song.song_logo }}"/"{{ song.song_video }}'>playvideo</a>
+   <a href='{{ song.song_logo }}"/"{{ song.song_video }}"/"{{ song.image }}'>image</a>
+
+
+   <li>{{ song.song_title }}-{{ song.file_type }}</li>
+   
+        
+     
+ {%endfor%}
+
+</u1>

@@ -1,0 +1,15 @@
+<html>
+
+<body>
+<h1>videos</h1>
+{%for song in albums.songs_set.all%} 
+    
+     <video controls>
+	<source src="{{ song.song_logo.url }}" type="audio/mp4";>
+        Your browser does not support the audio element.
+     </video>
+{%endfor%}  
+
+
+</body>
+</html>

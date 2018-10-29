@@ -1,0 +1,12 @@
+<html>
+
+<body>
+<h1>jklio</h1>
+
+
+{%for song in albums.songs_set.all%}
+  <img src="{{ song.song_logo.url }}";>
+  <li>{{ song.song_title }}-{{ song.file_type }}</li>
+{%endfor%}
+</body>
+</html>

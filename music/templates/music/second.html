@@ -1,0 +1,16 @@
+<html>
+
+<body>
+<h1>images</h1>
+
+{%for song in albumsss.songs_set.all%} 
+    
+     
+	<img src="{{song.image.url}}";>
+        
+    
+{%endfor%}  
+
+
+</body>
+</html>

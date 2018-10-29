@@ -1,0 +1,17 @@
+<html>
+
+<body>
+<h1>playing</h1>
+ 
+{%for song in albums.songs_set.all%} 
+    
+    <audio controls>
+        <source src="{{ song.song_logo.url }}" type="audio/mpeg";>
+        Your browser does not support the audio element.
+     </audio>
+     
+{%endfor%}  
+
+
+</body>
+</html>
